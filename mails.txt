@@ -1,0 +1,4 @@
+Login;Email
+#ivanovjti;ivanov@mail.com
+petrovjti;petrov@google.com
+obamajti;obama@yahoo.com

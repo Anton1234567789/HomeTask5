@@ -1,0 +1,3 @@
+Login;Email;Group
+petrovjti;petrov@google.com;Java2
+obamajti;obama@yahoo.com;Java1

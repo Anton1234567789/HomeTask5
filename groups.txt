@@ -1,0 +1,4 @@
+Login;Group
+ivanovjti;Java1
+petrovjti;Java2
+obamajti;Java1
