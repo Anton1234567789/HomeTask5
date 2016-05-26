@@ -8,13 +8,13 @@ import java.util.StringTokenizer;
 
 public class FileInput {
     private File file;
-    private static String str;
+    private String str;
 
     public FileInput(File file) {
         this.file = file;
         str = "";
     }
-   public static void upWord(){
+   public void upWord(){
         StringTokenizer stringTokenizer = new StringTokenizer(str);
         StringBuffer stringBuffer = new StringBuffer();
         while (stringTokenizer.hasMoreTokens()){

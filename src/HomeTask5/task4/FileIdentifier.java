@@ -27,23 +27,12 @@ public class FileIdentifier {
             mails1 = readMails.readLine();
             groups1 = readGroups.readLine();
         }
-
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("mails.txt"));
-        BufferedReader bufferedReader1 = new BufferedReader(new FileReader("groups.txt"));
-        String str="";
-        String str1="";
-        int symbol=0;
-        int symbols=0;
-        while ((symbol=bufferedReader.read())!=-1&&(symbols=bufferedReader1.read())!=-1){
-            str+=(char)symbol;
-
-            str1+=(char)symbols;
-        }
-        System.out.println(str);
-        System.out.println(" ");
-        System.out.println(str1);
         writerUsers.flush();
         writerUsers.close();
+        readMails.close();
+        readGroups.close();
+
+
     }
     public static void main(String[] args) throws IOException {
 
@@ -53,8 +42,5 @@ public class FileIdentifier {
 
         filter(readMails, readGroups, writeUsers);
 
-        readMails.close();
-        readGroups.close();
-        writeUsers.close();
     }
 }
